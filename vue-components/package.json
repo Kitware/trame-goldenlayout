@@ -1,0 +1,44 @@
+{
+  "name": "vue-trame_golden_layout",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./dist/trame_golden_layout.umd.js",
+  "unpkg": "./dist/trame_golden_layout.umd.js",
+  "module": "./dist/trame_golden_layout.mjs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/trame_golden_layout.mjs",
+      "require": "./dist/trame_golden_layout.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "lint": "eslint --fix src/**/*.js",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "golden-layout": "^2.6.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.7.0 || >=3.0.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vue/eslint-config-prettier": "^10.0.0",
+    "eslint": "^9.12.0",
+    "eslint-plugin-css": "^0.11.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.1.2",
+    "vite": "^5.4.9",
+    "vue": "^3.0.0"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json",
+    "*.js"
+  ]
+}
